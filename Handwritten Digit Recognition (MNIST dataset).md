@@ -1,83 +1,53 @@
-🔢 Handwritten Digit Recognition using CNN
+# 🔢 Handwritten Digit Recognition using CNN  
 
-This project builds and trains a Convolutional Neural Network (CNN) to classify handwritten digits (0–9) from the MNIST dataset using TensorFlow and Keras.
+This project builds and trains a **Convolutional Neural Network (CNN)** to classify handwritten digits (0–9) from the **MNIST dataset** using TensorFlow and Keras.  
 
-📂 Dataset
+## 📂 Dataset  
+- Dataset: [MNIST Handwritten Digits](http://yann.lecun.com/exdb/mnist/)  
+- Split into:  
+  - **Training set**: 60,000 images  
+  - **Test set**: 10,000 images  
 
-Dataset: MNIST Handwritten Digits
+## ⚙️ Project Workflow  
+1. **Data Loading & Preparation**  
+   - Loaded MNIST dataset directly from TensorFlow  
+   - Reshaped images to `(28,28,1)` for CNN input  
+   - Normalized pixel values (0–1 range)  
 
-Split into:
+2. **Data Visualization**  
+   - Displayed random samples of handwritten digits  
 
-Training set: 60,000 images
+3. **CNN Model Architecture**  
+   - Conv2D + MaxPooling layers for feature extraction  
+   - Dropout layers to reduce overfitting  
+   - Flatten + Dense layers for classification  
+   - Output layer with **softmax** activation for 10 classes  
 
-Test set: 10,000 images
+4. **Model Training**  
+   - Optimizer: Adam  
+   - Loss: Sparse Categorical Crossentropy  
+   - Epochs: 20 (with EarlyStopping)  
+   - Batch Size: 64  
+   - Training Accuracy: ~98%  
+   - Validation Accuracy: ~99%  
 
-⚙️ Project Workflow
+5. **Evaluation & Visualization**  
+   - Plotted accuracy & loss curves  
+   - Generated confusion matrix & classification report  
+   - Tested predictions on sample images  
 
-Data Loading & Preparation
+## 📊 Results  
+- Test Accuracy: **99%**  
+- Test Loss: **0.0348**  
 
-Loaded MNIST dataset directly from TensorFlow
+## 🚀 Future Improvements  
+- Experiment with deeper CNN architectures  
+- Apply **data augmentation** for more robust training  
+- Try **transfer learning** with pre-trained models  
+- Deploy the model as a web app (e.g., Streamlit/Flask)  
 
-Reshaped images to (28,28,1) for CNN input
+## 📧 Contact  
+For any inquiries or collaborations, feel free to reach me at: **ahmed2026shebo@gmail.com**  
 
-Normalized pixel values (0–1 range)
-
-Data Visualization
-
-Displayed random samples of handwritten digits
-
-CNN Model Architecture
-
-Conv2D + MaxPooling layers for feature extraction
-
-Dropout layers to reduce overfitting
-
-Flatten + Dense layers for classification
-
-Output layer with softmax activation for 10 classes
-
-Model Training
-
-Optimizer: Adam
-
-Loss: Sparse Categorical Crossentropy
-
-Epochs: 20 (with EarlyStopping)
-
-Batch Size: 64
-
-Training Accuracy: ~98%
-
-Validation Accuracy: ~99%
-
-Evaluation & Visualization
-
-Plotted accuracy & loss curves
-
-Generated confusion matrix & classification report
-
-Tested predictions on sample images
-
-📊 Results
-
-Test Accuracy: 99%
-
-Test Loss: 0.0348
-
-🚀 Future Improvements
-
-Experiment with deeper CNN architectures
-
-Apply data augmentation for more robust training
-
-Try transfer learning with pre-trained models
-
-Deploy the model as a web app (e.g., Streamlit/Flask)
-
-📧 Contact
-
-For any inquiries or collaborations, feel free to reach me at: ahmed2026shebo@gmail.com
-
-🔗 GitHub Repository
-
-👉 Project Link
+## 🔗 GitHub Repository  
+👉 [Project Link](https://github.com/ahmed2022Elshebawy/Deep-learning/blob/main/Handwritten%20Digit%20Recognition%20(MNIST%20dataset).ipynb)  
